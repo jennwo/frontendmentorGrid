@@ -1,0 +1,161 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.attribution {
+     font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    font-family: "Karla";
+    font-size: 16px;
+}
+
+.wrapper{
+    display: grid;
+    grid-column: 1fr;
+    align-content: center;
+    justify-content: center;
+    min-width: 350px;
+    padding: 1em;
+    max-width: 420px;
+}
+
+/* HEADer */
+.head{
+    background-color: white;
+    padding: 1.5em;
+    line-height: 2em;
+    box-shadow:  0 0 10px hsl(204, 43%, 93%) ;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.blue-text{
+    color:hsl(179, 62%, 43%);
+}
+.green-text{
+    color: hsl(71, 73%, 54%);
+}
+.gray-text{
+    color:hsl(218, 22%, 67%);
+}
+
+/* BOTTOM SECTION---PRICING AND EXPLAIN */
+
+.bottom-half{
+    color: hsl(204, 43%, 93%);
+    box-shadow:  0 0 10px hsl(204, 43%, 93%) ;
+}
+
+/* PRICING */
+div .pricing{
+    background-color: #2bb3b1;
+    padding-left: 2em;
+    padding-top: .5em;
+    padding-bottom: 2.5em;
+    /* box-shadow:  0 0 10px hsl(204, 43%, 93%) ; */
+    border-top-right-radius: 0;
+}
+
+p.price{
+    font-style: normal;
+    font-weight: lighter;
+}
+
+em.price{
+    font-size: 2em;
+    padding-right: .1em;
+    font-style: normal;
+    font-weight: 700;
+}
+.price-descr{
+    margin-top: -.8em;
+    font-size: 1.1em;
+}
+button{
+    background-color: #bfdf32;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    margin: auto;
+    margin-top: 10px;
+    padding: .8em;
+    width: 80%;
+    border-radius: 5%;
+    font-weight: bold;
+}
+/* WHY US SECTION */
+div .explain{
+    background-color: #4abebd;
+    padding-top: .5em;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+    height: min-content;
+}
+
+.explain h2{
+    padding-left: 1.5em;
+}
+
+.list li{
+    font-size: 1.08em;
+    line-height: 1.3em;
+    font-weight: lighter;
+    list-style-type: none;
+    justify-self: start;
+}
+
+
+@media screen and (min-width: 350px) and (max-width: 700px){
+    .pricing{
+    /* border-top-left-radius: 5px; */
+    border-top-right-radius: 5px;
+    }
+    .explain{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    }
+}
+
+
+
+
+
+/* Media query screens min-width:580 */
+
+@media screen and (min-width: 700px) {
+    .wrapper{
+        display: grid;
+        grid-template-rows: .5fr 1fr;
+        max-width: 1440px;
+        margin-top: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .head{
+
+    }
+
+section.bottom-half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow:  0 0 10px hsl(204, 43%, 93%) ;
+}
+.pricing{
+    align-self: stretch;
+    /* border-top-left-radius: 5px; */
+    border-bottom-left-radius: 5px;
+}
+.explain{
+    /* border-top-right-radius: 5px; */
+    border-bottom-right-radius: 5px;
+}
+   
+}
